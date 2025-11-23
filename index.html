@@ -4,75 +4,68 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FLEXXZ — Creative Sites & Media for Students</title>
-  <meta name="description" content="FLEXXZ — fast, student-first website building, photo & video edits, printouts & notes. DM @TheFlexxz_ or WhatsApp 8427899497" />
-  <meta name="theme-color" content="#071026" />
+  <meta name="description" content="FLEXXZ — student-first website building, photo & video edits, printouts & notes. DM @TheFlexxz_ or WhatsApp 8427899497" />
+  <meta name="theme-color" content="#071028" />
   <style>
     :root{
-      --bg-1: #071228;
-      --bg-2: #071026;
-      --panel: #0b1220;
-      --muted: #9aa0a6;
-      --accent-a: #2f6bff;   /* blue */
-      --accent-b: #7a48ff;   /* purple */
-      --insta-grad: linear-gradient(135deg,#ff6ee6,#7a48ff);
+      --bg:#0b0d12;
+      --panel:#0f1318;
+      --muted:#9aa0a6;
+      --accent-blue:#3b82f6;   /* primary blue */
+      --accent-blue-2:#2563eb;
       --glass: rgba(255,255,255,0.03);
       --card-radius:12px;
-      --maxw:1100px;
-      --text: #e7e9eb;
-      --wa-green: #25D366;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Helvetica Neue";
+      --max-w:1100px;
+      --text:#e7e9eb;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));color:var(--text);-webkit-font-smoothing:antialiased}
-    .wrap{max-width:var(--maxw);margin:28px auto;padding:20px}
-    header{display:flex;align-items:center;gap:16px}
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#06070a);color:var(--text);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--max-w);margin:28px auto;padding:20px}
+    header{display:flex;gap:14px;align-items:center}
     .brand{display:flex;gap:12px;align-items:center}
-    .logo-wrap{width:74px;height:74px;border-radius:14px;background:linear-gradient(135deg,#071226,#0e1224);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,0.6)}
-    .logo-wrap img{max-width:68px;max-height:68px;display:block;object-fit:contain}
-    .brand .title{line-height:1}
+    .logo-wrap{width:76px;height:76px;border-radius:14px;background:linear-gradient(135deg,#0c0f14,#13141a);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,0.5)}
+    .logo-wrap img{max-width:68px;max-height:68px;object-fit:contain;display:block}
     .brand h1{margin:0;font-size:18px;letter-spacing:0.6px}
     .brand p{margin:0;color:var(--muted);font-size:13px}
-    nav{margin-left:auto;display:flex;gap:8px;align-items:center}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;color:var(--muted);background:var(--glass);border:1px solid rgba(255,255,255,0.03);font-weight:700;font-size:13px;text-decoration:none;cursor:pointer;position:relative;overflow:hidden}
-    .btn.primary{background:linear-gradient(90deg,var(--accent-a),var(--accent-b));color:white;border:none;box-shadow:0 10px 30px rgba(122,72,255,0.08)}
-    .btn.small{padding:6px 8px;font-size:12px;border-radius:8px}
-    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
-    .hero{margin-top:18px;display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start}
-    .panel{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
-    .intro h2{margin:0 0 6px 0;font-size:22px}
+    nav{margin-left:auto;display:flex;gap:10px;align-items:center}
+    .btn{background:var(--glass);border:1px solid rgba(255,255,255,0.03);padding:8px 10px;border-radius:10px;color:var(--muted);font-weight:700;text-decoration:none;cursor:pointer;position:relative;overflow:hidden;font-size:13px}
+    .btn.small{padding:6px 8px;font-size:13px;border-radius:8px}
+    .btn.primary{background:linear-gradient(90deg,var(--accent-blue),var(--accent-blue-2));color:white;border:none;box-shadow:0 10px 28px rgba(37,99,235,0.09)}
+    .btn.wa{background:#25D366;color:black;border:none} /* WhatsApp green */
+    .btn.ig{background:linear-gradient(45deg,#fd5,pink);color:white;border:none} /* quick instagram tint */
+    .hero{margin-top:18px;display:grid;grid-template-columns:1fr 340px;gap:18px;align-items:start}
+    .panel{background:linear-gradient(180deg,var(--panel),#0b0c0f);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .intro h2{margin:0 0 8px 0;font-size:22px}
     .intro p{margin:0;color:var(--muted)}
-    .graffiti-anim{filter:drop-shadow(0 6px 22px rgba(122,72,255,0.06));transform-origin:center;animation:float 6s ease-in-out infinite}
-    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
-    .search-row{display:flex;gap:8px;align-items:center;margin-top:14px}
+    .graffiti-anim{filter:drop-shadow(0 8px 22px rgba(37,99,235,0.06));transform-origin:center;animation:floaty 6s ease-in-out infinite}
+    @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+    .search-row{display:flex;gap:10px;align-items:center;margin-top:14px}
     .search-row input{flex:1;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);font-size:14px}
     .cat-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    .chip{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);color:var(--muted);cursor:pointer;font-weight:600;font-size:13px}
-    .chip.active{background:linear-gradient(90deg,var(--accent-a),var(--accent-b));color:white;border:none;box-shadow:0 8px 26px rgba(122,72,255,0.07)}
+    .chip{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);color:var(--muted);cursor:pointer;font-weight:700}
+    .chip.active{background:linear-gradient(90deg,var(--accent-blue),var(--accent-blue-2));color:white;border:none;box-shadow:0 8px 26px rgba(37,99,235,0.06)}
     .services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);min-height:150px;display:flex;flex-direction:column;gap:8px}
-    .card h4{margin:0;font-size:15px}
+    .card{background:linear-gradient(180deg,#0d1114,#0b0d10);padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);min-height:150px;display:flex;flex-direction:column;gap:8px}
+    .card h4{margin:0;font-size:16px}
     .card p{margin:0;color:var(--muted);font-size:13px;flex:1}
-    .price{font-weight:800;color:var(--accent-a);font-size:15px}
+    .price{font-weight:800;color:var(--accent-blue);font-size:15px}
     .side-col{display:flex;flex-direction:column;gap:12px}
-    .contact-card{padding:12px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);border:1px solid rgba(255,255,255,0.03)}
-    .contact-card a{color:var(--accent-a);text-decoration:none;font-weight:800}
-    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding-bottom:28px}
-    .tiny{font-size:12px;color:var(--muted)}
+    .contact-card{padding:12px;border-radius:12px;background:linear-gradient(180deg,#0c0f12,#0a0c0e);border:1px solid rgba(255,255,255,0.03)}
+    .contact-card a{color:var(--accent-blue);text-decoration:none;font-weight:800}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding-bottom:30px}
     @media (max-width:980px){.hero{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:640px){.services{grid-template-columns:1fr}.logo-text{display:none}}
     /* modal */
     #orderModal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center;padding:18px}
-    .order-box{width:100%;max-width:640px;background:linear-gradient(180deg,#0a0a0b,#050507);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.04);box-shadow:0 18px 60px rgba(0,0,0,0.6)}
+    .order-box{width:100%;max-width:620px;background:linear-gradient(180deg,#0f1113,#0b0b0d);border-radius:12px;padding:16px;border:1px solid rgba(255,255,255,0.04);box-shadow:0 18px 70px rgba(0,0,0,0.6)}
     .order-box label{display:block;margin-top:10px;color:var(--muted);font-size:13px}
     .order-box input, .order-box select, .order-box textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:var(--text);margin-top:6px}
     .order-actions{display:flex;gap:8px;margin-top:12px;align-items:center;flex-wrap:wrap}
-    /* small button colors */
-    .wa-btn{background:var(--wa-green);color:#042c16;border:none}
-    .insta-btn{background:var(--insta-grad);color:white;border:none}
-    /* result area */
-    .order-result{margin-top:12px;color:var(--muted);font-size:13px}
-    /* tiny ripple fallback */
-    .btn:focus{outline:3px solid rgba(47,107,255,0.12);outline-offset:3px}
+    .muted{color:var(--muted)}
+    .tiny{font-size:12px;color:var(--muted)}
+    input:focus, select:focus, button:focus { outline: 3px solid rgba(59,130,246,0.12); outline-offset:3px }
   </style>
 </head>
 <body>
@@ -80,36 +73,32 @@
     <header>
       <div class="brand">
         <div class="logo-wrap graffiti-anim" aria-hidden="true">
-          <!-- Infinity / graffiti logo (uploaded file path) -->
-          <img id="logoInfinity" src="/mnt/data/A_digital_vector_graphic_features_a_graffiti-inspi.png" alt="Flexxz infinity logo">
+          <!-- Replace this src with whichever uploaded file you prefer. -->
+          <img id="logoImg" src="/mnt/data/A_digital_vector_graphic_features_a_logo_design_on.png" alt="Flexxz logo">
         </div>
-        <div class="logo-text">
-          <!-- Text logo (uploaded file path) -->
-          <img id="logoText" src="/mnt/data/A_logo_for_a_brand_named_Flexxz_is_displayed_again.png" alt="Flexxz text logo" style="height:22px;display:block;"/>
-          <div style="margin-top:6px">
-            <h1 style="font-size:18px;margin:0">FLEXXZ</h1>
-            <p style="margin:0;color:var(--muted);font-size:13px">@TheFlexxz_ — Sites • Photo • Video • Printouts</p>
-          </div>
+        <div>
+          <h1>FLEXXZ</h1>
+          <p>@TheFlexxz_ — Sites • Photos • Video • Notes</p>
         </div>
       </div>
 
       <nav>
-        <a class="btn ghost small" href="#services">Services</a>
-        <a class="btn ghost small" id="contactNow" href="https://instagram.com/TheFlexxz_" target="_blank" rel="noopener">Insta</a>
-        <a class="btn primary small" href="https://wa.me/918427899497?text=Hi%20Flexxz%2C%20I%20want%20to%20order" target="_blank" rel="noopener">WhatsApp • 8427899497</a>
+        <a class="btn small" id="btnServices" href="#services">Services</a>
+        <a class="btn small" id="btnContact" href="#contact">Contact</a>
+        <a class="btn primary small" id="contactNow" href="https://wa.me/918427899497?text=Hi%20Flexxz%2C%20I%20want%20to%20order" target="_blank" rel="noopener">WhatsApp • 8427899497</a>
       </nav>
     </header>
 
-    <!-- HERO / MAIN -->
+    <!-- HERO -->
     <div class="hero" id="top">
       <div class="panel intro">
-        <h2>Professional websites & creative edits — made for students.</h2>
-        <p class="muted">FLEXXZ builds portfolio sites, edits pictures & videos, creates study notes, and prints — fast, affordable, flexible.</p>
+        <h2>Websites & creative media for students — fast, pro, affordable.</h2>
+        <p class="muted">Flexxz builds portfolio sites, edits photos & videos, creates study notes and handles school printouts. Launch-ready, student pricing.</p>
 
-        <!-- SEARCH & CATEGORIES -->
-        <div class="search-row">
-          <input id="siteSearch" placeholder="Search services (e.g. 'website', 'notes', 'photo edit')" aria-label="Search services">
-          <button class="btn ghost small" id="clearSearch">Clear</button>
+        <!-- Search & categories -->
+        <div class="search-row" style="margin-top:14px;">
+          <input id="siteSearch" placeholder="Search services (e.g. 'notes', 'portfolio', 'video')" aria-label="Search services">
+          <button class="btn small" id="clearSearch">Clear</button>
         </div>
 
         <div class="cat-row" id="categories">
@@ -118,160 +107,174 @@
           <div class="chip" data-cat="web">Websites</div>
           <div class="chip" data-cat="photo">Photos</div>
           <div class="chip" data-cat="video">Video</div>
+          <div class="chip" data-cat="print">Printouts</div>
           <div class="chip" data-cat="design">Design</div>
         </div>
 
         <!-- SERVICES GRID -->
-        <div id="services" class="services">
-          <!-- NOTES group -->
+        <div id="services" class="services" style="margin-top:14px;">
+
+          <!-- NOTES - Simple Summary -->
           <div class="card" data-tags="notes">
             <h4>Simple Summary</h4>
-            <p>Quick short summary of a chapter — concise & exam-focused.</p>
+            <p>Short summary of a chapter/unit — concise, exam-focused (student provides topics/notes).</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">₹25</div>
-              <div><button class="btn primary small orderBtn" data-service="Simple Summary — ₹25">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Simple Summary — ₹25">Order</button></div>
             </div>
           </div>
 
+          <!-- NOTES - Flexxz Pro Summary -->
           <div class="card" data-tags="notes">
             <h4>Flexxz Pro Summary</h4>
-            <p>Detailed summary with highlights, examples & quick-answer notes — Flexxz style.</p>
+            <p>Expanded summary with pro formatting, highlight boxes, and quick revision tips (Flexxz style).</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">₹40</div>
-              <div><button class="btn primary small orderBtn" data-service="Flexxz Pro Summary — ₹40">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Flexxz Pro Summary — ₹40">Order</button></div>
             </div>
           </div>
 
+          <!-- NOTES - Simple Chapter Notes -->
           <div class="card" data-tags="notes">
             <h4>Simple Chapter Notes</h4>
-            <p>Chapter coverage with short points and essential diagrams (student-friendly).</p>
+            <p>Clear chapter-wise notes covering key points & definitions. Good for quick revision.</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">₹65</div>
-              <div><button class="btn primary small orderBtn" data-service="Simple Chapter Notes — ₹65">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Simple Chapter Notes — ₹65">Order</button></div>
             </div>
           </div>
 
+          <!-- NOTES - Flexxz Chapter Notes -->
           <div class="card" data-tags="notes">
             <h4>Flexxz Chapter Notes</h4>
-            <p>Full chapter notes with diagrams, explanations & cheat-sheet summary — best for revision.</p>
+            <p>Detailed chapter notes with diagrams, examples and exam-style pointers — formatted & print-ready.</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">₹100</div>
-              <div><button class="btn primary small orderBtn" data-service="Flexxz Chapter Notes — ₹100">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Flexxz Chapter Notes — ₹100">Order</button></div>
             </div>
           </div>
 
           <!-- WEBSITES -->
           <div class="card" data-tags="web">
             <h4>Mini Portfolio Site</h4>
-            <p>One-page portfolio: gallery, bio, links. Perfect for socials & college apps. (Text provided by customer: no extra charge.)</p>
+            <p>One-page portfolio for students — link to socials, contact, gallery. Customer text = no extra charge.</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">₹200–300</div>
-              <div><button class="btn primary small orderBtn" data-service="Mini Portfolio Site — ₹200-300">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Mini Portfolio Site — ₹200-300">Order</button></div>
             </div>
           </div>
 
           <div class="card" data-tags="web">
             <h4>Personal Website</h4>
-            <p>Multi-section site: about, services, contact & simple animations. +₹50 if we write text for you.</p>
+            <p>Multi-section site with bio, services, contact & simple animations. +₹50 if we write copy.</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">₹400–600</div>
-              <div><button class="btn primary small orderBtn" data-service="Personal Website — ₹400-600">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Personal Website — ₹400-600">Order</button></div>
             </div>
           </div>
 
           <div class="card" data-tags="web">
-            <h4>Advanced Website (Flexxz)</h4>
-            <p>Animated sections, graffiti logo reveal, custom effects and domain/hosting tips — FLEXXZ signature build.</p>
+            <h4>Advanced Site (Flexxz)</h4>
+            <p>Animated reveal, graffiti logo reveal, export-ready, hosting guidance (pro look & effects).</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">₹800–1500</div>
-              <div><button class="btn primary small orderBtn" data-service="Advanced Website — ₹800-1500">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Advanced Site — ₹800-1500">Order</button></div>
             </div>
           </div>
 
-          <!-- PHOTOS -->
+          <!-- PHOTO EDITS -->
           <div class="card" data-tags="photo">
-            <h4>Simple Photo Edit</h4>
-            <p>Quick retouch and color correction — makes pictures look clean & ready to post.</p>
+            <h4>Basic Photo Edit</h4>
+            <p>Quick retouch: color, crop, exposure — makes any photo post-ready.</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">₹25</div>
-              <div><button class="btn primary small orderBtn" data-service="Simple Photo Edit — ₹25">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Basic Photo Edit — ₹25">Order</button></div>
             </div>
           </div>
 
           <div class="card" data-tags="photo">
             <h4>Flexxz Photo Edit</h4>
-            <p>Advanced retouch, style grade, background clean, and custom requests accepted.</p>
+            <p>Pro-level edit with custom requests, stylized grade, background tweaks, and final polish.</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">₹40</div>
-              <div><button class="btn primary small orderBtn" data-service="Flexxz Photo Edit — ₹40">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Flexxz Photo Edit — ₹40">Order</button></div>
             </div>
           </div>
 
-          <div class="card" data-tags="design">
-            <h4>Photo Creation — Poster / Thumbnail</h4>
-            <p>Design posters, flyers, thumbnails — Canva & custom styling for socials.</p>
+          <div class="card" data-tags="photo design">
+            <h4>Photo Creation (Poster / Thumb)</h4>
+            <p>Design posters, thumbnails & flyers (Canva + custom touch). Social-ready export included.</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">₹30–80</div>
-              <div><button class="btn primary small orderBtn" data-service="Photo Creation — ₹30-80">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Photo Creation — ₹30-80">Order</button></div>
             </div>
           </div>
 
-          <!-- VIDEO -->
+          <!-- VIDEO EDITS -->
           <div class="card" data-tags="video">
-            <h4>Short Video Edit — Simple</h4>
-            <p>Anime-style edits, shakes, beat drops — simple version.</p>
+            <h4>Short Video Edit (Simple)</h4>
+            <p>Short anime-style edits, shakes & transitions for social clips.</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">₹50–150</div>
-              <div><button class="btn primary small orderBtn" data-service="Short Video Edit (Simple) — ₹50-150">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Short Video Edit — ₹50-150">Order</button></div>
             </div>
           </div>
 
           <div class="card" data-tags="video">
-            <h4>Short Video Edit — Flexxz</h4>
-            <p>High-energy anime edits, custom transitions, Flexxz signature style.</p>
+            <h4>Short Video Edit (Flexxz)</h4>
+            <p>Flexxz-style short edits with extra polish, sync & effects.</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
-              <div class="price">₹150–250</div>
-              <div><button class="btn primary small orderBtn" data-service="Short Video Edit (Flexxz) — ₹150-250">Order</button></div>
+              <div class="price">₹150–300</div>
+              <div><button class="btn small primary orderBtn" data-service="Short Flexxz Video — ₹150-300">Order</button></div>
             </div>
           </div>
 
           <div class="card" data-tags="video">
-            <h4>Long Video Edits</h4>
-            <p>Simple long edits and Flexxz long edits available — price depends on length & complexity.</p>
+            <h4>Long Video Edit (Simple)</h4>
+            <p>Longer edits (story or compilation). Simple pacing & transitions.</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
-              <div class="price">₹250–600</div>
-              <div><button class="btn primary small orderBtn" data-service="Long Video Edit — ₹250-600">Order</button></div>
+              <div class="price">₹250–400</div>
+              <div><button class="btn small primary orderBtn" data-service="Long Video Edit — ₹250-400">Order</button></div>
+            </div>
+          </div>
+
+          <div class="card" data-tags="video">
+            <h4>Long Video Edit (Flexxz)</h4>
+            <p>Full Flexxz long edit with advanced effects, beat-sync, and extra polish.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div class="price">₹400–600</div>
+              <div><button class="btn small primary orderBtn" data-service="Long Flexxz Edit — ₹400-600">Order</button></div>
             </div>
           </div>
 
           <!-- PRINTS -->
-          <div class="card" data-tags="notes design">
-            <h4>Notes & Printouts</h4>
-            <p>Short summary, chapter notes & printouts. B&W prints ₹2, colors & PDF formatting available.</p>
+          <div class="card" data-tags="print">
+            <h4>Printouts & Scans</h4>
+            <p>B&amp;W prints ₹2 per page. Colour prints available on request. PDF formatting & scanning service.</p>
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div class="price">From ₹2/print</div>
-              <div><button class="btn primary small orderBtn" data-service="Notes & Printouts">Order</button></div>
+              <div><button class="btn small primary orderBtn" data-service="Printouts & Scans">Order</button></div>
             </div>
           </div>
 
         </div>
       </div>
 
-      <!-- RIGHT COLUMN -->
-      <aside class="side-col">
+      <!-- RIGHT / SIDE COLUMN -->
+      <aside class="side-col" id="contact">
         <div class="contact-card">
           <h4 style="margin:0">Contact</h4>
           <div class="tiny muted" style="margin-top:6px">Fast replies on WhatsApp & Insta</div>
-          <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
-            <a class="btn small wa-btn" href="https://wa.me/918427899497?text=Hi%20Flexxz%2C%20I%20want%20to%20order" target="_blank" rel="noopener">WhatsApp</a>
-            <a class="btn small" style="background:var(--insta-grad);color:white;border:none" href="https://instagram.com/TheFlexxz_" target="_blank" rel="noopener">Instagram</a>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <a class="btn wa small" href="https://wa.me/918427899497?text=Hi%20Flexxz%2C%20I%20want%20to%20order" target="_blank" rel="noopener">WhatsApp • 8427899497</a>
+            <a class="btn ig small" href="https://instagram.com/TheFlexxz_" target="_blank" rel="noopener">@TheFlexxz_</a>
           </div>
-          <div style="margin-top:10px" class="tiny muted">Pro tip: DM with the service name (e.g. "Flexxz Photo Edit — 2 pics")</div>
+          <div style="margin-top:10px" class="tiny muted">Tip: DM with the service name (example: "Flexxz Photo Edit — 1 pic")</div>
         </div>
 
         <div class="contact-card">
           <h4 style="margin:0">Quick Order</h4>
-          <div class="tiny muted" style="margin-top:6px">Pick a service & hit Order — we'll prepare the message for WhatsApp / DM.</div>
+          <div class="tiny muted" style="margin-top:6px">Pick a service & hit Order — message prepared for WhatsApp/DM.</div>
           <div style="display:flex;gap:8px;margin-top:10px">
             <button class="btn small" id="sampleOrderBtn">Sample order</button>
             <button class="btn small" id="openForm">Place order</button>
@@ -281,9 +284,9 @@
         <div class="contact-card">
           <h4 style="margin:0">Why FLEXXZ?</h4>
           <ul class="tiny muted" style="margin-top:8px;padding-left:18px">
-            <li>Student-first pricing</li>
-            <li>Fast turnarounds (1–3 days)</li>
-            <li>Signature Flexxz creative style</li>
+            <li>Student pricing & speedy turnarounds</li>
+            <li>Pro creative style — the Flexxz signature</li>
+            <li>We help you look pro online</li>
           </ul>
         </div>
       </aside>
@@ -291,7 +294,7 @@
 
     <footer>
       <div>© FLEXXZ — Built by Vinayak • DM @TheFlexxz_ • 8427899497</div>
-      <div style="margin-top:6px" class="tiny muted">Ready for your launch — show them who's boss. ♾️</div>
+      <div style="margin-top:6px" class="tiny muted">Ready for Monday launch? Keep the energy — big things coming.</div>
     </footer>
   </div>
 
@@ -313,13 +316,15 @@
           <option>Flexxz Chapter Notes — ₹100</option>
           <option>Mini Portfolio Site — ₹200-300</option>
           <option>Personal Website — ₹400-600</option>
-          <option>Advanced Website — ₹800-1500</option>
-          <option>Simple Photo Edit — ₹25</option>
+          <option>Advanced Site — ₹800-1500</option>
+          <option>Basic Photo Edit — ₹25</option>
           <option>Flexxz Photo Edit — ₹40</option>
           <option>Photo Creation (Poster/Thumb) — ₹30-80</option>
-          <option>Short Video Edit — ₹50-250</option>
-          <option>Long Video Edit — ₹250-600</option>
-          <option>Notes & Printouts — from ₹2/print</option>
+          <option>Short Video Edit — ₹50-150</option>
+          <option>Short Flexxz Video — ₹150-300</option>
+          <option>Long Video Edit — ₹250-400</option>
+          <option>Long Flexxz Edit — ₹400-600</option>
+          <option>Printouts & Scans — from ₹2/print</option>
         </select>
 
         <label>Your name</label>
@@ -329,94 +334,85 @@
         <input id="ord_phone" placeholder="eg. 8427899497" required />
 
         <label>Details (what you need)</label>
-        <textarea id="ord_details" placeholder="Explain what you need — pages, images, style, length..." rows="4" required></textarea>
+        <textarea id="ord_details" placeholder="Explain text, images to include, pages, length, delivery notes..." rows="4" required></textarea>
 
         <div class="order-actions">
-          <button id="submitOrderBtn" class="btn primary small" type="submit">Prepare & Copy</button>
-          <button type="button" class="btn small" id="openWhatsAppFromModal">Open WhatsApp</button>
-          <button type="button" class="btn small ghost" onclick="autoCopyDMTemplate()">Copy DM template</button>
+          <button id="submitOrderBtn" class="btn primary small" type="submit">Prepare message & Copy</button>
+          <button type="button" class="btn small" id="openWhatsAppFromModal">Order on WhatsApp</button>
+          <button type="button" class="btn small" id="openInstaFromModal">Order on Instagram</button>
         </div>
 
-        <div id="orderResult" class="order-result" style="display:none"></div>
+        <div id="orderResult" style="margin-top:12px;display:none;color:var(--muted);font-size:13px"></div>
       </form>
     </div>
   </div>
 
   <script>
-    // shorthand selectors
-    const $ = sel => document.querySelector(sel);
-    const $$ = sel => Array.from(document.querySelectorAll(sel));
+    // helpers
+    const $ = s => document.querySelector(s);
+    const $$ = s => Array.from(document.querySelectorAll(s));
 
-    // categories
+    // categories & search
     const chips = $$('#categories .chip');
     const serviceCards = $$('#services .card');
 
     function setActiveCat(cat){
-      chips.forEach(c => c.classList.toggle('active', c.dataset.cat === cat || (cat === 'all' && c.dataset.cat === 'all')));
-      serviceCards.forEach(card => {
+      chips.forEach(c=> c.classList.toggle('active', c.dataset.cat === cat));
+      serviceCards.forEach(card=>{
         const tags = (card.dataset.tags || '').toLowerCase();
         if(cat === 'all' || tags.includes(cat)) card.style.display = '';
         else card.style.display = 'none';
       });
     }
+    // initial
+    chips.forEach(c=> c.addEventListener('click', ()=>{
+      chips.forEach(x=> x.classList.remove('active'));
+      c.classList.add('active');
+      setActiveCat(c.dataset.cat || 'all');
+      $('#siteSearch').value = '';
+    }));
     setActiveCat('all');
 
-    chips.forEach(chip => {
-      chip.addEventListener('click', () => {
-        chips.forEach(c=>c.classList.remove('active'));
-        chip.classList.add('active');
-        setActiveCat(chip.dataset.cat || 'all');
-        $('#siteSearch').value = '';
-      });
-    });
-
-    // search across visible cards
+    // search filter
     $('#siteSearch').addEventListener('input', function(){
       const q = this.value.trim().toLowerCase();
-      serviceCards.forEach(card => {
+      serviceCards.forEach(card=>{
+        const visibleByCat = card.style.display !== 'none';
         const txt = (card.innerText || '').toLowerCase();
-        const currentlyVisible = card.style.display !== 'none';
-        if(!currentlyVisible){
-          // remain hidden if category filter hides it
-          return;
-        }
+        if(!visibleByCat) return; // remain hidden by category
         card.style.display = (q === '' || txt.includes(q)) ? '' : 'none';
       });
     });
     $('#clearSearch').addEventListener('click', ()=> { $('#siteSearch').value=''; $('#siteSearch').dispatchEvent(new Event('input')); });
 
-    // modal open/close
+    // Order modal controls
     window.openOrderForm = function(serviceText){
-      const sel = $('#ord_service');
       if(serviceText){
-        const match = Array.from(sel.options).find(o => o.textContent.toLowerCase().includes(serviceText.toLowerCase()));
-        if(match) sel.value = match.value;
+        const sel = $('#ord_service');
+        const opt = Array.from(sel.options).find(o => o.text.toLowerCase().includes(serviceText.toLowerCase()));
+        if(opt) sel.value = opt.value;
       }
       $('#orderModal').style.display = 'flex';
-      setTimeout(()=> { try{ $('#ord_name').focus(); } catch(e){} }, 80);
+      setTimeout(()=> { try{ $('#ord_name').focus(); }catch(e){} }, 90);
     };
     function closeOrderForm(){
-      try{ $('#flexxzOrderForm').reset(); } catch(e){}
+      try{ $('#flexxzOrderForm').reset(); }catch(e){}
       $('#orderResult').style.display = 'none';
       $('#orderModal').style.display = 'none';
     }
     window.closeOrderForm = closeOrderForm;
 
-    // attach order buttons
-    $$('.orderBtn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const service = btn.dataset.service || btn.textContent || '';
-        openOrderForm(service);
-      });
+    // wire order buttons
+    $$('.orderBtn').forEach(btn=>{
+      btn.addEventListener('click', ()=> openOrderForm(btn.dataset.service || ''));
     });
 
-    // sample/order quick actions
     $('#sampleOrderBtn').addEventListener('click', ()=> {
-      alert('Sample: "Flexxz Photo Edit — 1 pic. DM @TheFlexxz_ or WhatsApp 8427899497"');
+      alert('Sample order: "Flexxz Photo Edit — 1 pic. DM @TheFlexxz_ or WhatsApp 8427899497"');
     });
     $('#openForm').addEventListener('click', ()=> openOrderForm());
 
-    // copy helper (clipboard API + fallback)
+    // copy helper
     function copyText(text){
       return new Promise((resolve,reject)=>{
         if(navigator.clipboard && navigator.clipboard.writeText){
@@ -425,22 +421,21 @@
         function fallback(){
           try{
             const ta = document.createElement('textarea');
-            ta.value = text;
-            ta.style.position = 'fixed'; ta.style.left = '-9999px';
-            document.body.appendChild(ta);
-            ta.select();
-            document.execCommand('copy');
-            document.body.removeChild(ta);
-            resolve();
-          } catch(e){ reject(e); }
+            ta.value = text; ta.style.position='fixed'; ta.style.left='-9999px';
+            document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); resolve();
+          }catch(e){ reject(e); }
         }
       });
     }
 
-    // prepare & copy order message
+    // build links
+    const WA_BASE = 'https://wa.me/918427899497?text=';
+    const INSTA_BASE = 'https://instagram.com/TheFlexxz_';
+
+    // on submit: copy msg and show order buttons
     $('#flexxzOrderForm').addEventListener('submit', async function(e){
       e.preventDefault();
-      const service = $('#ord_service').value;
+      const service = $('#ord_service').value.trim();
       const name = $('#ord_name').value.trim();
       const phone = $('#ord_phone').value.trim();
       const details = $('#ord_details').value.trim();
@@ -450,128 +445,100 @@
         return;
       }
 
-      const msgPlain = `Order for FLEXXZ:
-Service: ${service}
-Name: ${name}
-Phone: ${phone}
-Details: ${details}
-DM/WhatsApp: @TheFlexxz_ / 8427899497`;
+      const msgPlain = `Order for FLEXXZ:\nService: ${service}\nName: ${name}\nPhone: ${phone}\nDetails: ${details}\nDM/WhatsApp: @TheFlexxz_ / 8427899497`;
 
       let copied = false;
-      try{ await copyText(msgPlain); copied = true; } catch(e){ copied = false; }
+      try { await copyText(msgPlain); copied = true; } catch(e) { copied = false; }
 
       const res = $('#orderResult');
       res.style.display = 'block';
-      res.innerHTML = ''; // reset
+
+      // build encoded WhatsApp link
+      const encoded = encodeURIComponent(msgPlain);
+      const waLink = WA_BASE + encoded;
+      const instaLink = INSTA_BASE;
 
       if(copied){
-        const container = document.createElement('div');
-        container.style.display = 'flex';
-        container.style.gap = '8px';
-        container.style.flexWrap = 'wrap';
-        container.style.alignItems = 'center';
-
-        const info = document.createElement('div');
-        info.style.flex = '1';
-        info.style.minWidth = '160px';
-        info.innerHTML = '✅ Message copied to clipboard. Paste into Instagram DM or WhatsApp.';
-
-        const waBtn = document.createElement('button');
-        waBtn.className = 'btn small wa-btn';
-        waBtn.textContent = 'Order on WhatsApp';
-        waBtn.onclick = ()=> {
-          const enc = encodeURIComponent(msgPlain);
-          window.open(`https://wa.me/918427899497?text=${enc}`, '_blank');
-        };
-
-        const igBtn = document.createElement('button');
-        igBtn.className = 'btn small';
-        igBtn.style.background = 'var(--insta-grad)';
-        igBtn.style.color = 'white';
-        igBtn.textContent = 'Order on Instagram';
-        igBtn.onclick = ()=> {
-          // open instagram profile; user must paste
-          window.open('https://instagram.com/TheFlexxz_', '_blank');
-        };
-
-        container.appendChild(info);
-        container.appendChild(waBtn);
-        container.appendChild(igBtn);
-        res.appendChild(container);
-
-        const help = document.createElement('div');
-        help.className = 'tiny muted';
-        help.style.marginTop = '8px';
-        help.textContent = "If WhatsApp doesn't open, paste manually into chat with 8427899497 or DM @TheFlexxz_.";
-        res.appendChild(help);
+        // message copied - show two buttons for ordering
+        res.innerHTML = `
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+            <div style="flex:1;min-width:160px">✅ Message copied to clipboard. Paste into Instagram DM or WhatsApp.</div>
+            <button id="openWa" class="btn small wa">Order on WhatsApp</button>
+            <button id="openIg" class="btn small" style="background:linear-gradient(45deg,#f58529,#dd2a7b);color:white">Order on Instagram</button>
+          </div>
+          <div class="tiny muted" style="margin-top:8px">If nothing opens, paste manually into chat with 8427899497 or DM @TheFlexxz_</div>
+        `;
+        // attach listeners
+        setTimeout(()=> {
+          const openWa = $('#openWa');
+          const openIg = $('#openIg');
+          if(openWa) openWa.addEventListener('click', ()=> window.open(waLink, '_blank'));
+          if(openIg) openIg.addEventListener('click', ()=> window.open(instaLink, '_blank'));
+        }, 50);
       } else {
-        res.innerHTML = `⚠️ Could not copy automatically. Please copy the message below and paste into WhatsApp / DM:
-<pre style="background:rgba(255,255,255,0.02);padding:8px;border-radius:6px;margin-top:6px;color:var(--muted)">${escapeHtml(msgPlain)}</pre>
-<div style="margin-top:8px">
-  <button class="btn small wa-btn" id="openWa2">Open WhatsApp</button>
-  <button class="btn small" style="background:var(--insta-grad);color:white" id="openIg2">Open Instagram</button>
-</div>`;
-        $('#openWa2').addEventListener('click', ()=> {
-          const enc = encodeURIComponent(msgPlain);
-          window.open(`https://wa.me/918427899497?text=${enc}`, '_blank');
-        });
-        $('#openIg2').addEventListener('click', ()=> {
-          window.open('https://instagram.com/TheFlexxz_', '_blank');
-        });
+        // fallback: show message & direct buttons
+        res.innerHTML = `
+          <div>⚠️ Could not copy automatically. Please copy this message and paste into WhatsApp / DM:</div>
+          <pre style="background:rgba(255,255,255,0.02);padding:8px;border-radius:6px;margin-top:6px;color:var(--muted)">${escapeHtml(msgPlain)}</pre>
+          <div style="margin-top:8px;display:flex;gap:8px">
+            <button id="openWa2" class="btn small wa">Order on WhatsApp</button>
+            <button id="openIg2" class="btn small" style="background:linear-gradient(45deg,#f58529,#dd2a7b);color:white">Order on Instagram</button>
+          </div>
+        `;
+        setTimeout(()=> {
+          const openWa2 = $('#openWa2'); const openIg2 = $('#openIg2');
+          if(openWa2) openWa2.addEventListener('click', ()=> window.open(waLink, '_blank'));
+          if(openIg2) openIg2.addEventListener('click', ()=> window.open(instaLink, '_blank'));
+        }, 60);
       }
     });
 
-    // button in modal to open wa with partial data
+    // open WhatsApp button in modal (direct)
     $('#openWhatsAppFromModal').addEventListener('click', ()=> {
       const name = $('#ord_name').value.trim() || '[Name]';
       const service = $('#ord_service').value || '[Service]';
       const details = $('#ord_details').value.trim() || '';
       const msg = encodeURIComponent(`Hi Flexxz, I want to order: ${service}\nName: ${name}\nDetails: ${details}`);
-      window.open(`https://wa.me/918427899497?text=${msg}`, '_blank');
+      window.open(WA_BASE + msg, '_blank');
+    });
+
+    // open Instagram direct
+    $('#openInstaFromModal').addEventListener('click', ()=> {
+      window.open(INSTA_BASE, '_blank');
     });
 
     function escapeHtml(s){ return (s+'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]); }
 
-    // auto-fill service when clicking order buttons on cards handled above
-    // small ripple-like effect for buttons (progressive)
+    // auto copy DM template button for quick use
+    window.autoCopyDMTemplate = function(){
+      const template = 'Hi, I want to order: [service name] — My name: [Your Name], Contact: [WhatsApp].';
+      copyText(template).then(()=> alert('DM template copied — paste in Insta DM or WhatsApp')).catch(()=> alert('Copy this: ' + template));
+    };
+
+    // UI niceties: ripple / button micro animation
     document.addEventListener('click', function(evt){
-      const b = evt.target.closest('.btn');
-      if(!b) return;
-      const rect = b.getBoundingClientRect();
-      const ripple = document.createElement('span');
-      const size = Math.max(rect.width, rect.height) * 1.6;
-      ripple.style.position = 'absolute';
-      ripple.style.left = (evt.clientX - rect.left - size/2) + 'px';
-      ripple.style.top = (evt.clientY - rect.top - size/2) + 'px';
-      ripple.style.width = ripple.style.height = size + 'px';
-      ripple.style.borderRadius = '50%';
-      ripple.style.background = 'rgba(255,255,255,0.06)';
-      ripple.style.transform = 'scale(0)';
-      ripple.style.transition = 'transform 450ms cubic-bezier(.2,.9,.2,1), opacity 400ms';
-      ripple.style.pointerEvents = 'none';
-      b.appendChild(ripple);
-      requestAnimationFrame(()=> ripple.style.transform = 'scale(1)');
-      setTimeout(()=> ripple.style.opacity = '0', 280);
-      setTimeout(()=> { try{ b.removeChild(ripple); } catch(e){} }, 700);
+      const btn = evt.target.closest('.btn');
+      if(!btn) return;
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height) * 1.8;
+      const el = document.createElement('span');
+      el.style.width = el.style.height = size + 'px';
+      el.style.position = 'absolute';
+      el.style.borderRadius = '50%';
+      el.style.left = (evt.clientX - rect.left - size/2) + 'px';
+      el.style.top = (evt.clientY - rect.top - size/2) + 'px';
+      el.style.background = 'rgba(255,255,255,0.06)';
+      el.style.pointerEvents = 'none';
+      el.style.transform = 'scale(0)';
+      el.style.transition = 'transform 450ms cubic-bezier(.2,.9,.2,1), opacity 400ms';
+      btn.appendChild(el);
+      requestAnimationFrame(()=> el.style.transform = 'scale(1)');
+      setTimeout(()=> el.style.opacity = '0', 300);
+      setTimeout(()=> { try{ btn.removeChild(el); } catch(e){} }, 700);
     }, {passive:true});
 
-    // ESC closes modal
-    document.addEventListener('keydown', function(e){
-      if(e.key === 'Escape') closeOrderForm();
-    });
-
-    // wire any anchor with "Order" text to open modal
-    setTimeout(()=> {
-      Array.from(document.querySelectorAll('a,button')).forEach(el=>{
-        const txt = (el.textContent || '').trim().toLowerCase();
-        if(/order now|place order|order this|order/i.test(txt) && !el.classList.contains('wa-btn') ){
-          el.addEventListener('click', (ev) => {
-            // if button is a card-order button this is already wired; else open modal
-            if(!ev.target.closest('.orderBtn')) openOrderForm();
-          });
-        }
-      });
-    }, 200);
+    // close modal on ESC
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeOrderForm(); });
   </script>
 </body>
 </html>
